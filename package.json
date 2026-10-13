@@ -1,0 +1,26 @@
+{
+  "name": "pi-link",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node scripts/build.js && node server/index.js",
+    "check": "node scripts/build.js && node scripts/selfcheck.js"
+  },
+  "dependencies": {
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/xterm": "^5.5.0",
+    "busboy": "^1.6.0",
+    "esbuild": "^0.25.0",
+    "express": "^4.21.2",
+    "ssh2": "^1.16.0",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0"
+  }
+}
